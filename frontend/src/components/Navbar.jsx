@@ -73,7 +73,7 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faCircleArrowDown} className="text-sm" />
             </button>
             {showCategoryDropdown && (
-              <ul className="absolute left-0 mt-2 w-48 bg-whitet text-black rounded shadow-lg z-50">
+              <ul className="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg z-50">
                 {categories.map((cat, idx) => (
                   <li key={idx}>
                     <Link
