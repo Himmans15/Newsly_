@@ -33,7 +33,9 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-gray-800 text-white shadow-md">
       <nav className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center relative">
         {/* Logo */}
-        <h1 className="text-2xl font-bold">Newsly</h1>
+        <Link to="/">
+          <h1 className="text-2xl font-bold">Newsly</h1>
+        </Link>
 
         {/* Hamburger - Mobile screen version  */}
         <div className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
