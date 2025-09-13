@@ -26,7 +26,7 @@ function TopHeadlines() {
     setError(null);
     const categoryParam = params.category ? `&category=${params.category}` : "";
     fetch(
-      `https://news-aggregator-dusky.vercel.app/top-headlines?language=en${categoryParam}&page=${page}&pageSize=${pageSize}`
+      `http://localhost:3000/top_headlines?language=en${categoryParam}&page=${page}&pageSize=${pageSize}`
     )
       .then((response) => {
         if (response.ok) {

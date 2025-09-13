@@ -22,7 +22,7 @@ const AllNews = () => {
 
       try {
         const res = await fetch(
-          `https://news-aggregator-dusky.vercel.app/all-news?page=${page}&pageSize=${pageSize}`
+          `http://localhost:3000/all_news?page=${page}&pageSize=${pageSize}`
         );
         if (!res.ok) throw new Error("Network response was not ok");
 
